@@ -1,0 +1,385 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rishwanth123115/ML_23AG1A66H8/blob/main/Statistical%20measures\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Statistical measures\n",
+        "\n",
+        "Statistical measures help summarize and describe data sets: central tendency (mean, median, mode) and dispersion (variance, standard deviation).\n"
+      ],
+      "metadata": {
+        "id": "8wtdx2I9WY1j"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Central Tendency Measures"
+      ],
+      "metadata": {
+        "id": "A3SEfJBJvjke"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Mean is the arithmetic average, found by summing all data values and dividing by the number of items. It gives a sense of the \"typical\" value in a dataset, but is sensitive to extreme values (outliers)."
+      ],
+      "metadata": {
+        "id": "CcyxAYIqWdrH"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Median is the middle value when the dataset is ordered by size. If there is an even number of items, it's the average of the two middle ones. The median is much less affected by outliers or skewed data.\n",
+        "\n",
+        "Mode is the value that occurs most frequently within the dataset. It's most useful with categorical or discrete data but can be used for numeric values as well.\n",
+        "\n",
+        "These measures help identify a single representative value that reflects the \"center\" of the data.\n",
+        "\n",
+        "Measures of Dispersion\n",
+        "\n",
+        "Variance measures how far the numbers in the data set are spread out from the mean. A higher variance shows the data is widely spread, while a low variance suggests values are closely clustered around the mean.\n",
+        "\n",
+        "Standard Deviation is the square root of variance and is in the same units as the data. It provides a direct sense of the average distance each value differs from the mean.\n",
+        "\n",
+        "Both variance and standard deviation help describe the \"spread\" or \"variability\" of the data, indicating how much individual values tend to differ from the typical value."
+      ],
+      "metadata": {
+        "id": "9wGZCvk3Wqzv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "from statistics import mean, median, mode\n",
+        "\n",
+        "# Example data\n",
+        "data = [2, 4, 4, 4, 5, 5, 7, 9]\n",
+        "\n",
+        "# Central Tendency Measures\n",
+        "print(\"Mean:\", mean(data))\n",
+        "print(\"Median:\", median(data))\n",
+        "print(\"Mode:\", mode(data))\n",
+        "\n",
+        "# Measures of Dispersion\n",
+        "print(\"Variance:\", np.var(data))\n",
+        "print(\"Standard Deviation:\", np.std(data))"
+      ],
+      "metadata": {
+        "id": "pM83dz9nn_KP",
+        "outputId": "b7ed7b67-985d-4c9d-8e10-7d1aa84f167f",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mean: 5\n",
+            "Median: 4.5\n",
+            "Mode: 4\n",
+            "Variance: 4.0\n",
+            "Standard Deviation: 2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Math library\n",
+        "\n",
+        "The math library in Python is a built-in module that provides advanced mathematical functions and constants for performing a variety of calculations beyond basic operators. It is widely used for tasks in science, engineering, data analysis, and everyday programming."
+      ],
+      "metadata": {
+        "id": "n7EBcmUyXCbO"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Number Function"
+      ],
+      "metadata": {
+        "id": "dE0mUWvOuM59"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "math.ceil(x): Returns the smallest integer greater than or equal to x.\n",
+        "\n",
+        "math.floor(x): Returns the largest integer less than or equal to x.\n",
+        "\n",
+        "math.trunc(x): Truncates the decimal and returns the integer parts"
+      ],
+      "metadata": {
+        "id": "M4BywkyoXGUP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "print(math.ceil(2.3))\n",
+        "print(math.floor(2.7))\n",
+        "print(math.trunc(8.9))\n",
+        ""
+      ],
+      "metadata": {
+        "id": "KD0rr9KuuVAe",
+        "outputId": "41fda3e8-51af-4e3e-d2c5-723c12e80476",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "2\n",
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2. Power and Logarithmic Functions"
+      ],
+      "metadata": {
+        "id": "e7SUiupxuhrd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "math.pow(x, y): Returns x power y as a float.\n",
+        "\n",
+        "math.sqrt(x): Returns the square root of x.\n",
+        "\n",
+        "math.exp(x): Returns e power x (the exponential of x).\n",
+        "\n",
+        "math.log(x, base): Returns the logarithm of x to the given base."
+      ],
+      "metadata": {
+        "id": "9f7fyYfeXRZP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(math.pow(2, 3))\n",
+        "print(math.sqrt(16))\n",
+        "print(math.exp(2))\n",
+        "print(math.log(100, 10))\n",
+        ""
+      ],
+      "metadata": {
+        "id": "UIBYqBKcunCW",
+        "outputId": "b9b5e239-e920-4b00-d86f-55c0d1f3fa9b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8.0\n",
+            "4.0\n",
+            "7.38905609893065\n",
+            "2.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3. Trigonometric Functions"
+      ],
+      "metadata": {
+        "id": "jZifD9WKu019"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "math.sin(x), math.cos(x), math.tan(x): Trigonometric functions (input in radians).\n",
+        "\n",
+        "math.radians(x): Converts degrees to radians.\n",
+        "\n",
+        "math.degrees(x): Converts radians to degrees."
+      ],
+      "metadata": {
+        "id": "Z6QKUkNaXXRv"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(math.sin(math.pi/2))\n",
+        "print(math.cos(0))\n",
+        "print(math.tan(math.pi/4))\n",
+        "\n",
+        "print(math.radians(90))\n",
+        "\n",
+        "print(math.degrees(math.pi))\n",
+        ""
+      ],
+      "metadata": {
+        "id": "YaqZnZ-lu6ud",
+        "outputId": "791eb73b-988d-4bc7-81b4-f36aeae4876b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.0\n",
+            "1.0\n",
+            "0.9999999999999999\n",
+            "1.5707963267948966\n",
+            "180.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "4. Special Functions"
+      ],
+      "metadata": {
+        "id": "A-lR9WKuvC3t"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "math.factorial(x): Returns the factorial of x (x!).\n",
+        "\n",
+        "math.gcd(a, b): Computes the greatest common divisor.\n",
+        "\n",
+        "math.fabs(x): Returns the absolute value as a float."
+      ],
+      "metadata": {
+        "id": "GiGL9hU-Xesm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(math.factorial(5))\n",
+        "print(math.gcd(20, 8))\n",
+        "print(math.fabs(-7.5))\n",
+        ""
+      ],
+      "metadata": {
+        "id": "r1lfBLfJvGyF",
+        "outputId": "cffaa499-4b46-4258-f29b-3470a27c55e1",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "120\n",
+            "4\n",
+            "7.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "5. Constants"
+      ],
+      "metadata": {
+        "id": "9WDg_YvAvPC1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "math.pi: The value of π.\n",
+        "\n",
+        "math.e: The value of Euler’s number e."
+      ],
+      "metadata": {
+        "id": "2v_ZlsX5Xtxf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(math.pi)\n",
+        "print(math.e)"
+      ],
+      "metadata": {
+        "id": "NaCunOSMvTY9",
+        "outputId": "5d931e41-65c1-4b80-a52d-3a9003bf7ce0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.141592653589793\n",
+            "2.718281828459045\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
