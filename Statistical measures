@@ -79,11 +79,11 @@
         "print(\"Standard Deviation:\", np.std(data))"
       ],
       "metadata": {
-        "id": "pM83dz9nn_KP",
-        "outputId": "b7ed7b67-985d-4c9d-8e10-7d1aa84f167f",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "pM83dz9nn_KP",
+        "outputId": "b7ed7b67-985d-4c9d-8e10-7d1aa84f167f"
       },
       "execution_count": 1,
       "outputs": [
@@ -143,11 +143,11 @@
         ""
       ],
       "metadata": {
-        "id": "KD0rr9KuuVAe",
-        "outputId": "41fda3e8-51af-4e3e-d2c5-723c12e80476",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "KD0rr9KuuVAe",
+        "outputId": "41fda3e8-51af-4e3e-d2c5-723c12e80476"
       },
       "execution_count": 2,
       "outputs": [
@@ -196,11 +196,11 @@
         ""
       ],
       "metadata": {
-        "id": "UIBYqBKcunCW",
-        "outputId": "b9b5e239-e920-4b00-d86f-55c0d1f3fa9b",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "UIBYqBKcunCW",
+        "outputId": "b9b5e239-e920-4b00-d86f-55c0d1f3fa9b"
       },
       "execution_count": 3,
       "outputs": [
@@ -251,11 +251,11 @@
         ""
       ],
       "metadata": {
-        "id": "YaqZnZ-lu6ud",
-        "outputId": "791eb73b-988d-4bc7-81b4-f36aeae4876b",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "YaqZnZ-lu6ud",
+        "outputId": "791eb73b-988d-4bc7-81b4-f36aeae4876b"
       },
       "execution_count": 4,
       "outputs": [
@@ -303,11 +303,11 @@
         ""
       ],
       "metadata": {
-        "id": "r1lfBLfJvGyF",
-        "outputId": "cffaa499-4b46-4258-f29b-3470a27c55e1",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "r1lfBLfJvGyF",
+        "outputId": "cffaa499-4b46-4258-f29b-3470a27c55e1"
       },
       "execution_count": 5,
       "outputs": [
@@ -349,11 +349,11 @@
         "print(math.e)"
       ],
       "metadata": {
-        "id": "NaCunOSMvTY9",
-        "outputId": "5d931e41-65c1-4b80-a52d-3a9003bf7ce0",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        }
+        },
+        "id": "NaCunOSMvTY9",
+        "outputId": "5d931e41-65c1-4b80-a52d-3a9003bf7ce0"
       },
       "execution_count": 6,
       "outputs": [
@@ -363,6 +363,304 @@
           "text": [
             "3.141592653589793\n",
             "2.718281828459045\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "SciPy\n",
+        "\n",
+        "SciPy is a scientific computation library that uses NumPy underneath.\n",
+        "\n",
+        "SciPy stands for Scientific Python.\n",
+        "\n",
+        "It provides more utility functions for optimization, stats and signal processing.\n",
+        "\n",
+        "Like NumPy, SciPy is open source so we can use it freely.\n",
+        "\n",
+        "SciPy was created by NumPy's creator Travis Olliphant."
+      ],
+      "metadata": {
+        "id": "BnCuqdOZbqmd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Print the constant value of PI:\n",
+        "\n",
+        "from scipy import constants\n",
+        "\n",
+        "print(constants.pi)\n",
+        "\n",
+        "print(constants.yotta)\n",
+        "print(constants.zetta)\n",
+        "print(constants.exa)\n",
+        "print(constants.peta)\n",
+        "print(constants.tera)\n",
+        "print(constants.giga)\n",
+        "print(constants.mega)\n",
+        "print(constants.kilo)\n",
+        "print(constants.hecto)\n",
+        "print(constants.deka)\n",
+        "print(constants.deci)\n",
+        "print(constants.centi)\n",
+        "print(constants.milli)\n",
+        "print(constants.micro)\n",
+        "print(constants.nano)\n",
+        "print(constants.pico)\n",
+        "print(constants.femto)\n",
+        "print(constants.atto)\n",
+        "print(constants.zepto)\n",
+        ""
+      ],
+      "metadata": {
+        "id": "mL6D1QALb24d",
+        "outputId": "41375f91-398e-4b87-b1e6-b2f4b0bb6c71",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3.141592653589793\n",
+            "1e+24\n",
+            "1e+21\n",
+            "1e+18\n",
+            "1000000000000000.0\n",
+            "1000000000000.0\n",
+            "1000000000.0\n",
+            "1000000.0\n",
+            "1000.0\n",
+            "100.0\n",
+            "10.0\n",
+            "0.1\n",
+            "0.01\n",
+            "0.001\n",
+            "1e-06\n",
+            "1e-09\n",
+            "1e-12\n",
+            "1e-15\n",
+            "1e-18\n",
+            "1e-21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Binary Prefixes:\n",
+        "#Return the specified unit in bytes (e.g. kibi returns 1024)\n",
+        "\n",
+        "print(constants.kibi)    #1024\n",
+        "print(constants.mebi)    #1048576\n",
+        "print(constants.gibi)    #1073741824\n",
+        "print(constants.tebi)    #1099511627776\n",
+        "print(constants.pebi)    #1125899906842624\n",
+        "print(constants.exbi)    #1152921504606846976\n",
+        "print(constants.zebi)    #1180591620717411303424"
+      ],
+      "metadata": {
+        "id": "EhC9WJsVcJSl",
+        "outputId": "b759bd65-fc19-4bd7-a753-0cc2222dfb07",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1024\n",
+            "1048576\n",
+            "1073741824\n",
+            "1099511627776\n",
+            "1125899906842624\n",
+            "1152921504606846976\n",
+            "1180591620717411303424\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Connected Components\n",
+        "#Find all of the connected components with the connected_components() method.\n",
+        "import numpy as np\n",
+        "from scipy.sparse.csgraph import connected_components\n",
+        "from scipy.sparse import csr_matrix\n",
+        "\n",
+        "arr = np.array([\n",
+        "  [0, 1, 2],\n",
+        "  [1, 0, 0],\n",
+        "  [2, 0, 0]\n",
+        "])\n",
+        "\n",
+        "newarr = csr_matrix(arr)\n",
+        "\n",
+        "print(connected_components(newarr))"
+      ],
+      "metadata": {
+        "id": "S6rUIv7HhIJO",
+        "outputId": "2e68a9eb-8c9c-45a3-fabc-f3b491846202",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, array([0, 0, 0], dtype=int32))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dijkstra\n",
+        "\n",
+        "Use the dijkstra method to find the shortest path in a graph from one element to another.\n",
+        "\n",
+        "It takes following arguments:\n",
+        "\n",
+        "return_predecessors: boolean (True to return whole path of traversal otherwise False). indices: index of the element to return all paths from that element only. limit: max weight of path."
+      ],
+      "metadata": {
+        "id": "WiOYQoYZhQw8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Find the shortest path from element 1 to 2:\n",
+        "\n",
+        "import numpy as np\n",
+        "from scipy.sparse.csgraph import dijkstra\n",
+        "from scipy.sparse import csr_matrix\n",
+        "\n",
+        "arr = np.array([\n",
+        "  [0, 1, 2],\n",
+        "  [1, 0, 0],\n",
+        "  [2, 0, 0]\n",
+        "])\n",
+        "\n",
+        "newarr = csr_matrix(arr)\n",
+        "\n",
+        "print(dijkstra(newarr, return_predecessors=True, indices=0))"
+      ],
+      "metadata": {
+        "id": "HFl0HAhThVjc",
+        "outputId": "d8157a19-47ef-4f4f-d2d0-f072a7828b03",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(array([0., 1., 2.]), array([-9999,     0,     0], dtype=int32))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Floyd Warshall\n",
+        "#Use the floyd_warshall() method to find shortest path between all pairs of elements.\n",
+        "\n",
+        "#Find the shortest path between all pairs of elements:\n",
+        "\n",
+        "import numpy as np\n",
+        "from scipy.sparse.csgraph import floyd_warshall\n",
+        "from scipy.sparse import csr_matrix\n",
+        "\n",
+        "arr = np.array([\n",
+        "  [0, 1, 2],\n",
+        "  [1, 0, 0],\n",
+        "  [2, 0, 0]\n",
+        "])\n",
+        "\n",
+        "newarr = csr_matrix(arr)\n",
+        "\n",
+        "print(floyd_warshall(newarr, return_predecessors=True))"
+      ],
+      "metadata": {
+        "id": "dwW7MfRPhbFU",
+        "outputId": "371c4a6c-c5d7-4a15-a07d-8126a8b5fb82",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(array([[0., 1., 2.],\n",
+            "       [1., 0., 3.],\n",
+            "       [2., 3., 0.]]), array([[-9999,     0,     0],\n",
+            "       [    1, -9999,     0],\n",
+            "       [    2,     0, -9999]], dtype=int32))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Bellman Ford\n",
+        "#The bellman_ford() method can also find the shortest path between all pairs of elements, but this method can handle negative weights as well.\n",
+        "\n",
+        "#Find shortest path from element 1 to 2 with given graph with a negative weight:\n",
+        "\n",
+        "import numpy as np\n",
+        "from scipy.sparse.csgraph import bellman_ford\n",
+        "from scipy.sparse import csr_matrix\n",
+        "\n",
+        "arr = np.array([\n",
+        "  [0, -1, 2],\n",
+        "  [1, 0, 0],\n",
+        "  [2, 0, 0]\n",
+        "])\n",
+        "\n",
+        "newarr = csr_matrix(arr)\n",
+        "\n",
+        "print(bellman_ford(newarr, return_predecessors=True, indices=0))\n",
+        ""
+      ],
+      "metadata": {
+        "id": "tAp4s4FJhhZc",
+        "outputId": "baa03729-a605-4688-c4cc-0d9d33b8d95b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(array([ 0., -1.,  2.]), array([-9999,     0,     0], dtype=int32))\n"
           ]
         }
       ]
